@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compressor Pro</title>
+<link rel="manifest" href="manifest.json">
+<script>
+if('serviceWorker' in navigator){
+navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/language.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<header>
+<h1>Compressor Pro</h1>
+
+<select id="languageSelect">
+<option value="en">English</option>
+<option value="ar">Arabic</option>
+<option value="es">Spanish</option>
+<option value="zh">Chinese</option>
+</select>
+
+</header>
+
+<section class="hero">
+<h2 data-lang="title"></h2>
+
+<div class="tools">
+<a href="image-compressor.html" class="card">Image Compressor</a>
+<a href="video-compressor.html" class="card">Video Compressor</a>
+<a href="pdf-compressor.html" class="card">PDF Compressor</a>
+</div>
+
+</section>
+
+<footer>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="about.html">About</a>
+</footer>
+
+</body>
+</html>
